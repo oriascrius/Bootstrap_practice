@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+ul,
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+}
+
+img {
+    object-fit: cover;
+}
+
+// 整頁背景
+.bg {
+    background: url("../images/bg.jpg");
+}
+
+// 間隔線
+.header-l {
+    height: 10px;
+    background-image: url('../images/header_l.jpg');
+    width: 100%;
+}
+
+// banner
+.banner {
+    padding: 60px 0;
+
+    img {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .banner-text {
+        max-width: 800px;
+        margin: 80px auto 0;
+        font-size: 24px;
+    }
+}
+
+// banner 小尺寸
+@media (max-width:768px) {
+    .banner {
+        padding: 30px 0;
+
+        img {
+            margin: 0;
+        }
+
+        .banner-text {
+            margin: 15px auto 0;
+        }
+    }
+}
+
+
+// 每個卡片共用樣式
+.list-card {
+    margin: 60px 0 120px 0;
+
+    .list-card-text {
+        padding: 30px 50px;
+        border: 2px solid #2b838f;
+        background-color: #fff;
+        border-radius: 40px;
+        gap: 10px;
+        font-size: 20px;
+
+        h5 {
+            background-color: #2b838f;
+            color: #fff;
+            font-size: 22px;
+            border-radius: 50%;
+            padding: 25px 30px;
+            line-height: 1.2;
+
+        }
+
+        .list-card-text-tab {
+            left: -40px;
+            top: -65px;
+        }
+    }
+
+    span {
+        color: #2b838f;
+        font-weight: 700;
+    }
+
+    li {
+        font-weight: 900;
+        color: rgb(104, 104, 104);
+    }
+}
+
+// 每個卡片共用樣式 小尺寸
+@media (max-width:768px) {
+
+    .list-card {
+        .list-card-text {
+            padding: 60px 20px 20px;
+
+            .list-card-text-tab {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+
+    .list-card:last-child {
+        margin-bottom: 40px;
+    }
+}
+
+// 活動時間 女生圖定位
+.event-time {
+    .list-card-text-img {
+        right: 20px;
+        bottom: 50px;
+    }
+}
+
+// 賽程說明 女生圖定位
+.schedule-description {
+    .list-card-text-img {
+        left: -50px;
+        bottom: 50px;
+    }
+}
+
+
+// 活動獎項
+.event-awards {
+    .list-card-text {
+        padding-bottom: 250px;
+    }
+}

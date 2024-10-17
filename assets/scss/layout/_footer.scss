@@ -1,0 +1,52 @@
+footer {
+    background-color: black;
+
+    ul {
+        gap: 20px;
+    }
+
+    h5 {
+        background-color: gray;
+        color: #fff;
+        font-size: 22px;
+        border-radius: 50%;
+        padding: 20px;
+        line-height: 1.2;
+    }
+
+    span {
+        display: block;
+    }
+
+    .footer-bottom {
+        padding: 20px;
+        border-top: 1px solid #414040;
+    }
+
+}
+
+@media (max-width:768px) {
+    footer {
+        h5 {
+            border-radius: 0;
+            background-color: #414040;
+            font-family: 900;
+        }
+
+        span {
+            display: inline-block;
+        }
+
+        .footer-card {
+            padding: 10px 20px;
+            border-right: 1px solid #414040;
+            border-bottom: 1px solid #414040;
+            min-height: 100px;
+        }
+
+        .footer-bottom {
+            border-top: 0;
+        }
+    }
+
+}
